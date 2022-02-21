@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+    
+<div class="main__content">
+  <header>
+    {{>header}}
+  </header>
+  
+
+  <h1 id="error_message">{{content}}</h1>    
+
+  <script type="text/javascript">
+    const h_message = document.getElementById("error_message");
+    const current_content = h_message.textContent
+    if(!current_content){
+      h_message.textContent = "There was an error set by JS"
+    }
+  </script>
+
+</div>
+
+
+
+
+{{>footer}}
+
+</body>
+
+</html>

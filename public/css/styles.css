@@ -1,0 +1,61 @@
+body {
+    color: grey;
+    font-family: arial;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    color: rgb(48, 48, 48);
+    
+}
+
+footer {
+    margin: 16px;
+    padding: 16px;
+    color: #888888;
+    border-top: 1px solid gray;
+}
+
+footer > p {
+    font-style: italic;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+header a {
+    color: grey;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: rgb(34, 34, 34);
+}
+
+.main__content{
+    flex-grow: 1;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: gray;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid rgb(41, 41, 41);
+    background: grey;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+}
