@@ -10,6 +10,7 @@ const partialsPath = path.join(__dirname, "../templates/partials")
 const geocode = require('./utils/geocode.js');
 const weatherRequest = require('./utils/weatherRequest.js')
 
+const port = porcess.env.PORT || 3000;
 
 const app = express()
 
@@ -87,6 +88,6 @@ app.get('*', (req, res)=>{
     })
 })
 
-app.listen(3000, () => {
-    console.log("The app server has started on port 3000.")
+app.listen(port, () => {
+    console.log("The app server has started on port " + port)
 })
